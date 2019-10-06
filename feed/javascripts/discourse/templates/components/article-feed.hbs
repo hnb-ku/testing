@@ -1,0 +1,26 @@
+{{#if args.articles}}
+  <div class="jcarousel jcarousel-wrapper">
+    <ul>
+      {{#each args.articles as |article|}}
+        <li class="article-wrapper ">
+          <div class="article-title-wrapper">
+            {{#if article.link}}
+              <a title="{{article.title}}" class="article-link" href={{article.link}}>
+                <div class="article-thumbnail-wrapper">
+                  {{#if article.thumbnail}}
+                    <img title="{{article.thumbnailTitle}}" src={{article.thumbnail}}
+                     height="200" class="article-thumbnail" />
+                  {{/if}}
+                </div>
+                {{#if article.title}}
+                  <h4 class="article-title">{{article.title}}</h4>
+                {{/if}}
+              </a>
+            {{/if}}
+          </div>
+        </li>
+      {{/each}}
+    </ul>
+
+  </div>
+{{/if}}

@@ -1,0 +1,13 @@
+{
+  "name": "Article Feed",
+  "about_url": null,
+  "license_url": null,
+  "component": true,
+  "assets": {
+    "aleo_regular": "/assets/aleo-regular-webfont.woff",
+    "aleo_italic": "/assets/aleo-italic-webfont.woff",
+    "aleo_bold": "/assets/aleo-bold-webfont.woff",
+    "aleo_bold_italic": "/assets/aleo-bolditalic-webfont.woff"
+  },
+  "color_schemes": {}
+}

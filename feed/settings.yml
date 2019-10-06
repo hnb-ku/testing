@@ -1,0 +1,15 @@
+article_source:
+  default: "https://billswire.usatoday.com"
+  description: "The URL of the source site to fetch the articles from. Example: https://billswire.usatoday.com"
+filter:
+  default: "posts?per_page=4"
+  description: "The URL parameter added to the request to fetch articles. This is used to only fetch the 4 most recent articles by default"
+thumbnail_size:
+  default: "?w=600"
+  description: "The URL parameter added to the thumbnail request. This is used to avoid fetching very large images"
+cache_timeout:
+  default: 10
+  description: "How long - in minutes - to wait before fetching new articles while the user is on the site. This prevents overloading the source server."
+extend_content_security_policy:
+  type: list
+  default: "script_src: https://cdnjs.cloudflare.com/ajax/libs/jcarousel/0.3.9/jquery.jcarousel.min.js"
