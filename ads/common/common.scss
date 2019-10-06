@@ -1,0 +1,78 @@
+.discovery-list-container-top-outl {
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 100%;
+  max-width: 1110px;
+
+  padding-top: 60px;
+  .mobile-view & {
+    padding-top: 50px;
+  }
+  display: flex;
+  flex-direction: column;
+}
+
+.adsense-topic-list-top,
+.adsense-topic-above-post-stream,
+.dfp-ad-topic-list-top,
+.dfp-ad-topic-above-post-stream {
+  position: relative;
+  padding: 3em 0 1em 0;
+
+  margin-bottom: 1em;
+
+  :before {
+    position: absolute;
+    content: "";
+    height: 140%;
+    top: -20%;
+    width: 150vw;
+    left: -50vw;
+    background: rgb(245, 245, 245);
+    z-index: -1;
+  }
+}
+
+// resets
+
+.google-adsense,
+.google-dfp-ad {
+  .google-adsense-label,
+  .google-dfp-ad-label {
+    width: 100% !important;
+    text-align: center;
+  }
+}
+
+.topic-post {
+  .widget-connector {
+    $topic-avatar-width: 45px;
+    border-top: 1px solid $primary-low;
+    padding-bottom: 1em;
+    .desktop-view & {
+      width: #{$topic-body-width + ($topic-body-width-padding * 2) +
+        $topic-avatar-width};
+    }
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.google-dfp-ad.dfp-ad-post-bottom {
+  padding: 0 11px;
+  .google-dfp-ad-label,
+  .dfp-ad-unit {
+    margin: 0 !important;
+  }
+}
+
+// tmp demo
+
+.google-adsense-content,
+#div-gpt-ad-topic-above-post-stream,
+#div-gpt-ad-topic-list-top,
+#div-gpt-ad-topic-above-suggested,
+[id*="div-gpt-ad-post-bottom-"] {
+  border: 1px solid red;
+}
